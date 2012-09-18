@@ -4,14 +4,84 @@
  */
 
 
+.clear {
+	clear: both;
+}
+#header {
+	height: 70px;
+	width: 100%;
+	height: 70px;
+}
+#title {
+	height: 70px;
+	float: left;
+	line-height: 10%;
+}
+#title p {
+	font-size: 17px;
+	font-family: 'McLaren', cursive; 
+	font-weight: bold;
+	color: #202020;
+}
+#menu {
+	width: 400px;
+	height: 70px;
+	float: right;
+}
+.divCenter {
+	margin: 0 auto;
+}
+#buttonMore {
+	width: 100px; 
+	border: 1px solid black;
+}
 
-
-
-
-
-
-.divCenter {margin: 0 auto;}
-
-#buttonMore {width: 100px; border: 1px solid black;}
-
-#bullshit {margin: 0 auto; border: 1px solid black; width: 740px; font-family: 'McLaren', cursive; font-size: 40px; text-align: center; height: 400px;}
+#bullshit {
+	margin: 0 auto;
+	padding-top: 50px;  
+	width: 70%; 
+	font-family: 'McLaren', cursive; 
+	font-size: 40px; 
+	text-align: center; 
+	height: 400px;
+	clear: both;
+	color: #202020;
+}
+ul li {
+	float: left;
+	list-style: none;
+	margin-right: 1em;
+	font-family: 'McLaren', cursive; 
+}
+li a {
+	color: #202020;
+	text-decoration: none;
+	float: left;
+	font-size: 14px;
+	padding: 12px;
+}
+li a:hover {
+	color: #787878;
+}
+.left a:hover {
+	/*Transition*/ 
+	-webkit-transition:All .5s ease;
+	-moz-transition:All .5s ease;
+	-o-transition:All .5s ease;
+ 
+	/*Transform*/ 
+	-webkit-transform: rotate(-10deg) scale(1.2);
+	-moz-transform: rotate(-10deg) scale(1.2);
+	-o-transform: rotate(-10deg) scale(1.2);
+} 
+.right a:hover {
+	/*Transition*/ 
+	-webkit-transition:All .5s ease;
+	-moz-transition:All .5s ease;
+	-o-transition:All .5s ease;
+ 
+	/*Transform*/ 
+	-webkit-transform: rotate(10deg) scale(1.2);
+	-moz-transform: rotate(10deg) scale(1.2);
+	-o-transform: rotate(10deg) scale(1.2);
+}
