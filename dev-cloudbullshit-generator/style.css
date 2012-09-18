@@ -1,0 +1,17 @@
+/** Style sheet for Cloud Bullshit Generator
+ * By Joe Gardiner
+ * http://joegardiner.co.uk
+ */
+
+
+
+
+
+
+
+
+.divCenter {margin: 0 auto;}
+
+#buttonMore {width: 100px; border: 1px solid black;}
+
+#bullshit {margin: 0 auto; border: 1px solid black; width: 740px; font-family: 'McLaren', cursive; font-size: 40px; text-align: center; height: 400px;}
