@@ -2,7 +2,7 @@
     <head>
     	<title>Cloud Bullshit Generator</title>
     	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
-    	<LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
+    	<link rel=StyleSheet href="style.css" type="text/css" media=screen>
     	<link href='http://fonts.googleapis.com/css?family=McLaren' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -24,8 +24,8 @@
     	<div id="bullshit">
 	    	<?php include("selectContent.php"); ?>
 	    </div>
-	    <div class="divCenter" id="buttonMore"> 
-		    <input type="button" value="More Bullshit" onClick="window.location.reload()">
+	    <div class="divCenter"> 
+		    <input type="button" id="button" value="More Bullshit" onClick="window.location.reload()">
 		</div>
     </body>
 </html>
