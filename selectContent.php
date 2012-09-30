@@ -5,7 +5,8 @@ include("dbConnect.php");
 mysql_select_db("cloudshit", $con);
 
 $result = mysql_query("SELECT content 
-    					FROM content 
+    					FROM content
+    					WHERE Approved = 1 
     					ORDER BY rand() 
     					LIMIT 1");
 
