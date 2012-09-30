@@ -1,3 +1,4 @@
+<link rel=StyleSheet href="style.css" type="text/css" media=screen>
 <?php
 include("dbConnect.php");
 
@@ -17,12 +18,12 @@ $result = mysql_query("SELECT * FROM content");
 mysql_close();
 
 ?>
-
-<table border="1" cellspacing="2" cellpadding="2">
+<div id="adminTable">
+<table id="adminContent" cellspacing="0" cellpadding="2">
 <tr>
-<td><font face="Arial, Helvetica, sans-serif">ID</font></td>
-<td><font face="Arial, Helvetica, sans-serif">Content</font></td>
-<td><font face="Arial, Helvetica, sans-serif">Approved?</font></td>
+<th><font face="Arial, Helvetica, sans-serif">ID</font></td>
+<th><font face="Arial, Helvetica, sans-serif">Content</font></td>
+<th><font face="Arial, Helvetica, sans-serif">Approved?</font></td>
 </tr>
 
 <?php
@@ -37,14 +38,15 @@ while ($i < $num) {
 	$id = mysql_result($result,$i,"id");
 	$content = mysql_result($result,$i,"content");
 	$approved = mysql_result($result,$i,"Approved");
+
 ?>
 
-<tr>
+<tr id="<?php if ($i % 2 == 0) {echo "adminEven";} else {echo "adminOdd";} ?>">
 <td><font face="Arial, Helvetica, sans-serif"><?php echo $id; ?></font></td>
 <td><font face="Arial, Helvetica, sans-serif"><?php echo $content; ?></font></td>
 <td><font face="Arial, Helvetica, sans-serif"><?php checkbox($approved); ?></font></td>
 </tr>
-
+</div>
 <?php
 $i++;
 }

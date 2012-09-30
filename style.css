@@ -116,3 +116,27 @@ li a:hover {
     position: relative;
     top: 6px;
 }
+
+/** ADMIN TABLE RULES **/
+#adminTable {
+	border: 1px solid black;
+	padding: 5px;
+	margin: 0 auto;
+	width: 70%;
+}
+table#adminContent {
+	
+}
+
+th {
+	background: black;
+	color: white;
+}
+#adminEven {
+	background: rgba(197,197,197,0.74); 
+	color: black;
+}
+#adminOdd {
+	background: white; 
+	color: black;
+}
