@@ -119,18 +119,25 @@ li a:hover {
 
 /** ADMIN TABLE RULES **/
 #adminTable {
-	border: 1px solid black;
-	padding: 5px;
-	margin: 0 auto;
+	padding: 10px;
+	margin: 30px auto 0;
 	width: 70%;
 }
 table#adminContent {
-	
+	font-family: 'Cabin', sans-serif;
 }
-
+td {
+	padding: 10px;
+	text-align: center;
+}
 th {
-	background: black;
+	padding: 15px;
+	background: #202020;
 	color: white;
+	font-size: 18px;
+}
+td#content {
+	padding: 10px 60px 0;
 }
 #adminEven {
 	background: rgba(197,197,197,0.74); 
